@@ -1,0 +1,39 @@
+:root {
+    --header-color: background: #5327F2
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background:#b30000;
+    padding: 5px;
+}
+
+#header > h1 {
+    text-align: center;
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    color: white;
+    font-size: 40px;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    font-weight: 600;
+    background-color: #FF2B2B   ;
+    margin: 0px;
+    padding: 8px;
+}
+
+#menu > li, a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
