@@ -1,5 +1,6 @@
 :root {
-    --header-color: background: #5327F2
+    --header-color: #5327F2;
+    --header-second-color: #7655ee;
 }
 
 body {
@@ -8,7 +9,7 @@ body {
 }
 
 #header {
-    background:#b30000;
+    background: var(--header-color);
     padding: 5px;
 }
 
@@ -24,7 +25,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     font-weight: 600;
-    background-color: #FF2B2B   ;
+    background-color: var(--header-second-color);
     margin: 0px;
     padding: 8px;
 }
