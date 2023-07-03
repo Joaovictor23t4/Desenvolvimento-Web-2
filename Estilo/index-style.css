@@ -1,6 +1,9 @@
 :root {
     --header-color: #5327F2;
     --header-second-color: #7655ee;
+    --mibr-primary-color: #dea83d;
+    --furia-and-sk-color: #000;
+    --imperial-color: #0cd664;
 }
 
 body {
@@ -9,21 +12,20 @@ body {
 }
 
 #header {
+    display: flex;
+    justify-content: center;
     background: var(--header-color);
     padding: 5px;
 }
 
-#header > h1 {
-    text-align: center;
-    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
-    color: white;
-    font-size: 40px;
+#header > img {
+    width:  10%;
 }
 
 #menu {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     font-weight: 600;
     background-color: var(--header-second-color);
     margin: 0px;
@@ -37,4 +39,16 @@ body {
     color: white;
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
+}
+
+#mibr:hover {
+    color: var(--mibr-primary-color);
+}
+
+#furia:hover, #sk:hover {
+    color: var(--furia-and-sk-color);
+}
+
+#imperial:hover {
+    color: var(--imperial-color);
 }
