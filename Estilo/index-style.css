@@ -12,6 +12,8 @@
     box-sizing: border-box;
 }
 
+/* CAROUSEL */
+
 .container {
     position: relative;
     padding: 15px;
@@ -84,6 +86,38 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+/* FIM DO CAROUSEL */
+
+/* NOTICIAS GRID PRINCIPAL */
+
+#grid-noticias-principais {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+    "noticia-principal noticia-secundaria-1"
+    "noticia-principal noticia-secundaria-2";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.noticia-grande {
+    grid-area: noticia-principal;
+    padding: 1.5rem;
+}
+
+.noticia-menor-1 {
+    grid-area: noticia-secundaria-1;
+}
+
+.noticia-menor-2 {
+    grid-area: noticia-secundaria-2;
+}
+
+.noticia-grande, .noticia-menor-1, .noticia-menor-2 {
+    background-color: #BC20E2;
+} 
+
 
 body {
     margin: 0;
