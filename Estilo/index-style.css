@@ -30,6 +30,7 @@
     display: flex;
     flex-wrap: row nowrap;
     gap: 15px;
+    cursor: pointer;
 }
 
 .arrow-left,
@@ -93,31 +94,54 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 #grid-noticias-principais {
     display: grid;
-    gap: 1rem;
     grid-template-areas:
-    "noticia-principal noticia-secundaria-1"
-    "noticia-principal noticia-secundaria-2";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto auto;
+    "imagem-principal imagem-secundaria-1"
+    "imagem-principal imagem-secundaria-2";
+    grid-template-columns: 598.484px 598.5px;
+    grid-template-rows: 320.359px 320.359px;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    margin-top: 100px;
+    justify-content: center;
 }
 
-.noticia-grande {
-    grid-area: noticia-principal;
-    padding: 1.5rem;
+#grid-noticias-principais img {
+    border-radius: 20px;
 }
 
-.noticia-menor-1 {
-    grid-area: noticia-secundaria-1;
+#imagem-principal {
+    grid-area: imagem-principal;
 }
 
-.noticia-menor-2 {
-    grid-area: noticia-secundaria-2;
+#imagem-principal img {
+    max-width: 600px;
+    height: 652px;
 }
 
-.noticia-grande, .noticia-menor-1, .noticia-menor-2 {
-    background-color: #BC20E2;
-} 
+#imagem-secundaria-1 {
+    display: inline;
+    grid-area: imagem-secundaria-1;
+    max-width: 480px;
+    max-height: 262.31px;
+}
 
+#imagem-secundaria-1 img {
+    max-width: 480px;
+    height: 320px;
+}
+
+#imagem-secundaria-2 {
+    grid-area: imagem-secundaria-2;
+    max-width: 480px;
+    max-height: 320px;
+}
+
+#imagem-secundaria-2 img {
+    max-width: 480px;
+    height: 320px;
+}
+
+/*FIM DO GRID*/
 
 body {
     margin: 0;
