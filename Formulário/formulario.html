@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-formulario.css">
+    <title>Interação com Formulários</title>
+</head>
+<body>
+    <section>
+        <form action="formulario.php">
+            <fieldset>
+                <legend> <strong>Formulário</strong> </legend>
+
+                <div class="inputContainer">
+                    <input type="text" name="nome" id="idNome" class="inputUser" required>
+                    <label for="nome" class="labelReduce">Nome</label>
+                </div>
+
+                <br><br>
+
+                <div class="inputContainer">
+                    <input type="tel" name="telefone" id="idTelefone" class="inputUser" required>
+                    <label for="telefone" class="labelReduce">Telefone</label>
+                </div>
+
+                    <label for="dataNascimento"> <strong>Data de Nascimento:</strong> </label>
+                    <input type="date" name="dataNascimento" id="idDataN" required>
+
+                <div class="inputContainer">
+                    <p>Sexo:</p>
+                    <input type="radio" name="genero" id="generoMasculino" value="Masculino" required>
+                    <label for="masculino">Masculino</label>
+
+                    <br>
+
+                    <input type="radio" name="genero" id="generoFeminino" value="Masculino" required>
+                    <label for="feminino">Feminino</label>
+                </div>
+
+                <br><br>
+
+                <div class="inputContainer">
+                    <input type="text" name="email" id="idEmail" class="inputUser" required>
+                    <label for="email" class="labelReduce">Email</label>
+                </div>
+
+                <br><br>
+
+                <div class="inputContainer">
+                    <input type="password" name="senha" id="idSenha" class="inputUser" required>
+                    <label for="senha" class="labelReduce">Senha</label>
+                </div>
+
+                <br><br>
+
+                <input type="submit" name="submit" id="submit" value="Enviar Formulários">
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
