@@ -1,6 +1,6 @@
 <?php 
 
-if (isset($_POST ['submit'])) {
+if (isset($_POST['submit'])) {
     //print_r('Nome: ' . $_POST['nomeL']);
     //print_r('Senha: ' . $_POST['senhaL']);
 
@@ -9,6 +9,14 @@ if (isset($_POST ['submit'])) {
     $nomeLogin = $_POST['nomeL'];
     $senhaLogin = $_POST['senhaL'];
 
+    $resultLogin = mysqli_query($conexao, "SELECT nome FROM informacoes WHERE nome = '$nomeLogin' AND senha = '$senhaLogin'");
+
+    if ($resultLogin && mysqli_num_rows($resultLogin) > 0) {
+        echo '<meta http-equiv="refresh" content="0;URL=/Desenvolvimento-Web-2/HyperText/">';
+        exit();
+    } else {
+        echo "Nome e/ou senha incorretos.";
+    }
 }
 
 ?>
