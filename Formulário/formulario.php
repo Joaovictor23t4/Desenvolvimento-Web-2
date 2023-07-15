@@ -20,7 +20,7 @@
     $data_nasc = $_POST['data_nasc'];
     $genero = $_POST['genero'];
     $email = $_POST['email'];
-    $senha = $_POST['senha'];
+    $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
     $result = mysqli_query($conexao, "INSERT INTO informacoes(nome,telefone,data_nasc,genero,email,senha) VALUES('$nome','$telefone','$data_nasc','$genero','$email','$senha')");
  }

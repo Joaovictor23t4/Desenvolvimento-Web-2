@@ -1,23 +1,25 @@
 <?php 
 
 if (isset($_POST['submit'])) {
-    //print_r('Nome: ' . $_POST['nomeL']);
-    //print_r('Senha: ' . $_POST['senhaL']);
-
     include_once('../conexao.php');
 
     $nomeLogin = $_POST['nomeL'];
     $senhaLogin = $_POST['senhaL'];
 
-    $resultLogin = mysqli_query($conexao, "SELECT nome FROM informacoes WHERE nome = '$nomeLogin' AND senha = '$senhaLogin'");
+    $resultLogin = mysqli_query($conexao, "SELECT nome, senha FROM informacoes WHERE nome = '$nomeLogin'");
 
     if ($resultLogin && mysqli_num_rows($resultLogin) > 0) {
-        echo '<meta http-equiv="refresh" content="0;URL=/Desenvolvimento-Web-2/HyperText/">';
-        exit();
+        $usuario = mysqli_fetch_assoc($resultLogin);
+
+        if (password_verify($senhaLogin, $usuario['senha'])) {
+            echo '<meta http-equiv="refresh" content="0;URL=/Desenvolvimento-Web-2/HyperText/">';
+            exit();
+        }
     } else {
         echo "Nome e/ou senha incorretos.";
     }
 }
+
 
 ?>
 
