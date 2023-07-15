@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(to right, #5327F2, #0c0131);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 80px;
+    border-radius: 15px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin-right: 20px;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+#container a {
+    max-width: 100px;
+}
