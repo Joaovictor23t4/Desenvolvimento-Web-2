@@ -1,0 +1,45 @@
+body {
+    background-image: linear-gradient(to right, #5327F2, #0c0131);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px;
+    color: white;
+}
+
+#idNome {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+#idSubmit {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    cursor: pointer;
+    padding: 10px;
+}
+
+#idSubmit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
+h1 {
+    position: relative;
+    margin-bottom: 30%;
+}
