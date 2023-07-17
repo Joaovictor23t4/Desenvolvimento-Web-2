@@ -25,6 +25,8 @@
 body {
     background-color: var(--tema-branco);
     transition: background-color .8s;
+    margin: 0;
+    padding: 0;
 }
 
 /* CAROUSEL */
@@ -118,6 +120,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     grid-row-gap: 10px;
     margin-top: 100px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 #grid-noticias-principais img {
@@ -193,18 +196,74 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
 
-/*FIM DO GRID*/
+/*FIM DO GRID PRINCIPAL*/
 
-body {
-    margin: 0;
-    padding: 0;
+/* MIBR-GRID */
+
+#grid-mibr {
+    display: grid;
+    grid-template-areas:
+     "nome nome"
+     "mibr-principal mibr-secundaria-1"
+     "mibr-principal mibr-secundaria-2";
+     grid-template-columns: 480px 480px;
+     grid-template-rows: 50px 200px 200px;
+     justify-content: flex-start;
+     margin-left: 1%;
 }
 
+#grid-mibr img {
+    position: relative;
+    border-radius: 20px;
+}
+
+#grid-mibr h3 {
+    font-family: 'Oswald', sans-serif;
+    grid-area: nome;
+    position: relative;
+    border-bottom: 2px solid var(--header-color);
+    bottom: 20px;
+    width: 84%;
+    font-size: 30px;
+    color: var(--mibr-primary-color);
+}
+
+.mibr-noticia-principal {
+    grid-area: mibr-principal;
+}
+
+.mibr-noticia-principal img {
+    width: 400px;
+    height: 380px;
+}
+
+.mibr-noticia-secundaria-1 {
+    grid-area: mibr-secundaria-1;
+    max-width: 326.312px;
+    max-height: 183.547px;;
+}
+
+.mibr-noticia-secundaria-1 img {
+    width: 326.312px;
+    height: 183.547px;
+}
+
+.mibr-noticia-secundaria-2 {
+    grid-area: mibr-secundaria-2;
+}
+
+.mibr-noticia-secundaria-2 img {
+    width: 326.312px;
+    height: 183.547px;
+}
+
+/* FIM DO MIBR-GRID */
+
+/* HEADER/NAV */
 #header {
     display: flex;
     justify-content: center;
     background: var(--header-color);
-    /*background: #12024e;*/
     padding: 5px;
 }
 
@@ -218,7 +277,6 @@ body {
     justify-content: space-around;
     font-weight: 600;
     background-color: var(--header-second-color);
-    /*background-color:  #210979;*/
     margin: 0px;
     padding: 8px;
 }
@@ -244,6 +302,8 @@ body {
 #imperial:hover {
     color: var(--imperial-color);
 }
+
+/* FIM DO HEADER/NAV */
 
 /* ALTERNAR TEMA */
 .mudarTema {
