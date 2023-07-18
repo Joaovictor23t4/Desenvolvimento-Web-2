@@ -50,6 +50,11 @@
                 <br><br>
 
                 <div class="inputContainer">
+                    <input type="text" class="inputUser" name="cpf" id="idCpf" required>
+                    <label for="cpf" class="labelReduce">CPF</label>
+                </div>
+
+                <div class="inputContainer">
                     <input type="tel" name="telefone" id="idTelefone" class="inputUser" required>
                     <label for="telefone" class="labelReduce">Telefone</label>
                 </div>
