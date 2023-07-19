@@ -3,6 +3,8 @@
  if (isset($_POST ['submit'])) {
     /*print_r('Nome: ' . $_POST['nome']);
     print_r('<br>');
+    print_r('CPF: ' . $_POST['cpf']);
+    print_r('<br>');
     print_r('Telefone: ' . $_POST['telefone']);
     print_r('<br>');
     print_r('Data de Nascimento: ' . $_POST['data_nasc']);
@@ -11,18 +13,20 @@
     print_r('<br>');
     print_r('Email: ' . $_POST['email']);
     print_r('<br>');
-    print_r('Senha: ' . $_POST['senha']);*/
+    print_r('Senha: ' . $_POST['senha']);
+    */
 
     include_once('conexao.php');
 
     $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
     $telefone = $_POST['telefone'];
     $data_nasc = $_POST['data_nasc'];
     $genero = $_POST['genero'];
     $email = $_POST['email'];
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-    $result = mysqli_query($conexao, "INSERT INTO informacoes(nome,telefone,data_nasc,genero,email,senha) VALUES('$nome','$telefone','$data_nasc','$genero','$email','$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO informacoes(nome,cpf,telefone,data_nasc,genero,email,senha) VALUES('$nome', '$cpf','$telefone','$data_nasc','$genero','$email','$senha')");
  }
 
 ?>
@@ -54,6 +58,8 @@
                     <label for="cpf" class="labelReduce">CPF</label>
                 </div>
 
+                <br><br>
+
                 <div class="inputContainer">
                     <input type="tel" name="telefone" id="idTelefone" class="inputUser" required>
                     <label for="telefone" class="labelReduce">Telefone</label>
@@ -69,7 +75,7 @@
 
                     <br>
 
-                    <input type="radio" name="genero" id="generoFeminino" value="Masculino" required>
+                    <input type="radio" name="genero" id="generoFeminino" value="Feminino" required>
                     <label for="feminino">Feminino</label>
                 </div>
 

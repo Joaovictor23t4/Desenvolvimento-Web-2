@@ -1,26 +1,25 @@
 <?php 
-
-if (isset($_POST['submit'])) {
+if(isset($_POST['submitLogin'])) {
     include_once('../conexao.php');
 
-    $nomeLogin = $_POST['nomeL'];
-    $senhaLogin = $_POST['senhaL'];
+    $cpfLogin = $_POST['cpfLogin'];
+    $senhaLogin = $_POST['senhaLogin'];
 
-    $resultLogin = mysqli_query($conexao, "SELECT nome, senha FROM informacoes WHERE nome = '$nomeLogin'");
+    $login = mysqli_query($conexao, "SELECT cpf,senha FROM informacoes WHERE cpf = '$cpfLogin'");
 
-    if ($resultLogin && mysqli_num_rows($resultLogin) > 0) {
-        $usuario = mysqli_fetch_assoc($resultLogin);
+    if($login && mysqli_num_rows($login) > 0) {
+        $usuario = mysqli_fetch_assoc($login);
 
-        if (password_verify($senhaLogin, $usuario['senha'])) {
-            echo '<meta http-equiv="refresh" content="0;URL=/Desenvolvimento-Web-2/HyperText/">';
+        if(password_verify($senhaLogin, $usuario['senha'])) {
+            echo '<meta http-equiv="refresh" content="0;URL=/Desenvolvimento-Web-2/HyperText/index.html">';
             exit();
         }
-    } else {
-        echo "Nome e/ou senha incorretos.";
+
+        else {
+            echo "CPF e/ou senha incorretos!";
+        }
     }
 }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -29,18 +28,18 @@ if (isset($_POST['submit'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-login.css">
-    <link rel="shortcut icon" href="../controle.ico" type="image/x-icon">
-    <title>Tela de Login</title>
+    <title>Login</title>
 </head>
 <body>
-    <div id="tela-login">
+    <div class="container">
         <form action="login.php" method="post">
-        <h1>Login</h1>
-        <input type="text" placeholder="Nome" name="nomeL" id="idNome">
-        <br><br>
-        <input type="password" placeholder="Senha" name="senhaL" id="idSenha">
-        <br><br>
-        <input type="submit" value="Enviar" name="submit" id="submit">
+            <h1>Login</h1>
+            <br>
+            <input type="text" name="cpfLogin" id="idCpf" placeholder="CPF">
+            <br><br>
+            <input type="password" name="senhaLogin" id="idSenha" placeholder="Senha">
+            <br><br>
+            <input type="submit" name="submitLogin" id="idSubmit" value="Logar">
         </form>
     </div>
 </body>
