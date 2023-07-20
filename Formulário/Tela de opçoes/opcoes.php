@@ -10,7 +10,7 @@
     <div id="container">
         <h1>Opções</h1>
        <a href="../Login/login.php"><input type="button" value="Login"></a>
-        <a href="/Desenvolvimento-Web-2/Formulário/formulario.php"><input type="button" value="Cadastre-se"></a>
+        <a href="../formulario.php"><input type="button" value="Cadastre-se"></a>
     </div>
 </body>
 </html>

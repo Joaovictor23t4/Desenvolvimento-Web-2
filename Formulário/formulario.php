@@ -26,7 +26,7 @@
     $email = $_POST['email'];
     $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT);
 
-    $result = mysqli_query($conexao, "INSERT INTO informacoes(nome,cpf,telefone,data_nasc,genero,email,senha) VALUES('$nome', '$cpf','$telefone','$data_nasc','$genero','$email','$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO informacoes(nome,cpf,telefone,data_nasc,genero,email,senha) VALUES('$nome', '$cpf', '$telefone', '$data_nasc', '$genero', '$email', '$senha')");
  }
 
 ?>
