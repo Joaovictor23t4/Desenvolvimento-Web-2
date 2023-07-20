@@ -34,13 +34,15 @@ if(isset($_POST['submit'])) {
 <body>
     <div class="container">
         <form action="login.php" method="post">
-        <h1><Label>Login</Label></h1>
-        <input type="text" name="cpfLogin" id="idCpf" placeholder="CPF">
+        <h1>Login</h1>
+        <input type="text" name="cpfLogin" id="idCpf" placeholder="CPF" required>
         <br><br>
-        <input type="password" name="senhaLogin" id="idSenha" placeholder="Senha">
+        <input type="password" name="senhaLogin" id="idSenha" placeholder="Senha" required>
         <br><br>
         <input type="submit" value="Logar" name="submit" id="submitLogin">
         </form>
+
+        <a href="../Esquecer a senha/esqueci-senha.php">Esqueci a senha</a>
     </div>
 
     <img src="/HyperText/index.html" alt="">

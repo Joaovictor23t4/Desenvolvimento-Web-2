@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #5327F2, #0c0131);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px;
+    color: #fff;
+    font-size: 18px;
+}
+
+#idSenha, #idConfirmacao {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#idSubmit {
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 72%;
+    cursor: pointer;
+}
+
+#idSubmit:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}

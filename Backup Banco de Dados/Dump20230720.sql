@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `formulario` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE  IF NOT EXISTS `formulario` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `formulario`;
 -- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
@@ -26,14 +26,18 @@ DROP TABLE IF EXISTS `informacoes`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `informacoes` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(45) NOT NULL,
-  `telefone` varchar(20) DEFAULT NULL,
+  `nome` varchar(30) NOT NULL,
+  `cpf` varchar(14) NOT NULL,
+  `telefone` varchar(14) DEFAULT NULL,
   `data_nasc` date DEFAULT NULL,
   `genero` enum('Masculino','Feminino') DEFAULT NULL,
-  `email` tinytext NOT NULL,
-  `senha` varchar(35) NOT NULL,
+  `email` varchar(191) NOT NULL,
+  `senha` varchar(191) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `nome` (`nome`)
+  UNIQUE KEY `nome` (`nome`),
+  UNIQUE KEY `cpf` (`cpf`),
+  UNIQUE KEY `email` (`email`),
+  UNIQUE KEY `senha` (`senha`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -43,7 +47,7 @@ CREATE TABLE `informacoes` (
 
 LOCK TABLES `informacoes` WRITE;
 /*!40000 ALTER TABLE `informacoes` DISABLE KEYS */;
-INSERT INTO `informacoes` VALUES (1,'Joao Victor Portela Rocha','121313131','2023-07-04','Masculino','joaovictor239090@gmail.com','3123141');
+INSERT INTO `informacoes` VALUES (1,'Joao Victor Portela Rocha','783.414.123-10','+5547988300373','2007-10-23','Masculino','joaovictor239090@gmail.com','$2y$10$H0AmhKMCNg09/TBVzU2dz.g.13ZplMrA.OP3N30b7pwx5vjXBXymq');
 /*!40000 ALTER TABLE `informacoes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -56,4 +60,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-07-15  0:25:17
+-- Dump completed on 2023-07-20 13:59:48

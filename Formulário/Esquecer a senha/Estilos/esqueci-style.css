@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #5327F2, #0c0131);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 80px;
+    font-size: 20px;
+}
+
+#idCpfEsqueci {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+#idSubmitEsqueci {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(90, 20, 220));
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#idSubmitEsqueci:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
