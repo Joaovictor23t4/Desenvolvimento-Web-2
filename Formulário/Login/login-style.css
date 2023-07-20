@@ -18,6 +18,13 @@ body {
     text-align: center;
 }
 
+.container a {
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    top: 86%;
+}
+
 #idCpf, #idSenha {
     border: none;
     outline: none;
