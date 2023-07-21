@@ -11,6 +11,12 @@ if(isset($_POST['submit'])) {
     if($resultLogin && mysqli_num_rows($resultLogin) > 0) {
         $usuario = mysqli_fetch_assoc($resultLogin);
 
+        if(!isset($_SESSION)) {
+            session_start();
+        }
+
+        $_SESSION['cpf'] = $usuario['cpf'];
+
         if(password_verify($senhaLogin, $usuario['senha'])) {
             header("Location: http://localhost/Desenvolvimento-Web-2-git/HyperText/index.php");
             exit();

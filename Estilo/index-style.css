@@ -302,7 +302,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 /* HEADER/NAV */
 #header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between ;
     background: var(--header-color);
     padding: 5px;
 }

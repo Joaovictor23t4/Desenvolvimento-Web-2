@@ -1,3 +1,13 @@
+<?php 
+if(!isset($_SESSION)) {
+    session_start();
+}
+
+include('../Formulário/Login/protecao.php')
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,6 +21,10 @@
 <body>
     <header id="header">
         <img src="../Imagens/logo.png" alt="Logo">
+
+        <p id="logout">
+            <a href="../Formulário/Login/logout.php">Sair</a>
+        </p>
     </header>
 
     <nav id="nav">
