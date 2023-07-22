@@ -5,7 +5,7 @@ if(!isset($_SESSION)) {
 }
 
 if(!isset($_SESSION['cpf'])) {
-    die("Erro: você não está logado! <p><a href=\"../Formulário/Login/login.php\">Logar</a></p>");
+    die("Erro: Você não está logado! <p><a href=\"../Formulário/Tela de opçoes/opcoes.php\">Logar</p>");
 }
 
 ?>

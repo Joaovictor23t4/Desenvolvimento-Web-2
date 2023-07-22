@@ -8,9 +8,13 @@ if(isset($_POST['submit'])) {
 
     $resultLogin = mysqli_query($conexao, "SELECT cpf,senha FROM informacoes WHERE cpf = '$cpfLogin'");
 
-    if($resultLogin && mysqli_num_rows($resultLogin) > 0) {
-        $usuario = mysqli_fetch_assoc($resultLogin);
+    if ($resultLogin && mysqli_num_rows($resultLogin) === 0) {
+        echo "CPF incorreto";
+    }
 
+     else if ($resultLogin && mysqli_num_rows($resultLogin) > 0) {
+        $usuario = mysqli_fetch_assoc($resultLogin);
+        
         if(!isset($_SESSION)) {
             session_start();
         }
@@ -51,6 +55,6 @@ if(isset($_POST['submit'])) {
         <a href="../Esquecer a senha/esqueci-senha.php">Esqueci a senha</a>
     </div>
 
-    <img src="/HyperText/index.html" alt="">
+    <img src="" alt="">
 </body>
 </html>
