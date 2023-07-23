@@ -54,7 +54,5 @@ if(isset($_POST['submit'])) {
 
         <a href="../Esquecer a senha/esqueci-senha.php">Esqueci a senha</a>
     </div>
-
-    <img src="" alt="">
 </body>
 </html>

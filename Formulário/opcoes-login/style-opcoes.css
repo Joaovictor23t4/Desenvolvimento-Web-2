@@ -30,6 +30,10 @@ input {
     font-size: 18px;
 }
 
+#inLogin:hover, #inForm:hover {
+    background-image: linear-gradient(to right, rgb(0, 80, 172), rgb(80, 19, 195));
+}
+
 #container a {
     max-width: 100px;
 }

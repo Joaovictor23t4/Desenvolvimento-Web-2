@@ -6,6 +6,6 @@ if(!isset($_SESSION)) {
 
 session_destroy();
 
-header("Location: ../Login/login.php");
+header("Location: ../opcoes-login/opcoes.php");
 
 ?>

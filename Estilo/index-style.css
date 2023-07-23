@@ -4,6 +4,7 @@
     --mibr-primary-color: #dea83d;
     --furia-and-sk-color: #000;
     --imperial-color: #0cd664;
+    --sair-color: rgb(230, 57, 57);
     --legenda-color: #fff;
     --tema-branco: #f7f7f7;
     --tema-escuro: #000;
@@ -238,8 +239,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 
 .mibr-noticia-principal img {
-    width: 400px;
-    height: 380px;
+    width: 85%;
+    height: 95%;
 }
 
 .mibr-noticia-secundaria-1 {
@@ -281,7 +282,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
     left: 28%;
-    bottom: -83%;
+    bottom: -81%;
     font-size: 1.2em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
@@ -292,7 +293,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
     position: absolute;
-    left: 27.4%;
+    left: 28%;
     bottom: -102%;
     font-size: 1.2em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
@@ -327,9 +328,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     position: relative;
     bottom: 60px;
     border-bottom: 2px solid var(--header-color);
-    width: 86.8%;
+    width: 84.5%;
     font-size: 30px;
-    color: var(--furia-and-sk-color);
+    color: var(--tema-escuro
+    );
 }
 
 .furia-noticia-principal {
@@ -360,7 +362,142 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 183.547px;
 }
 
+.legenda-furia-principal {
+    position: absolute;
+    color: var(--legenda-color);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: -167.5%;
+    width: 20%;
+    font-size: 1.4em;
+    left: 3%;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+}
+
+.legenda-furia-secundaria-1 {
+    position: absolute;
+    bottom: -147%;
+    width: 17%;
+    color: var(--legenda-color);
+    left: 28%;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+}
+
+.legenda-furia-secundaria-2 {
+    position: absolute;
+    bottom: -167%;
+    left: 28%;
+    width: 18%;
+    color: var(--legenda-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+}
+
 /* FIM FURIA-GRID */
+
+/* INICIO IMPERIAL-GRID */
+
+#grid-imperial {
+    display: grid;
+    grid-template-areas:
+    "nome nome"
+    "imperial-principal imperial-secundario-1"
+    "imperial-principal imperial-secundario-2";
+    grid-template-columns: 480px 480px;
+    grid-template-rows: 50px 200px 200px;
+    justify-content: flex-start;
+    margin-left: 1%;
+    margin-top: 10%;
+    background-color: var(--tema-branco-2);
+    width: 43.8%;
+}
+
+#grid-imperial img {
+    position: relative;
+    border-radius: 20px;
+}
+
+#secao-imperial {
+    font-family: 'Oswald', sans-serif;
+    grid-area: nome;
+    position: relative;
+    bottom: 60px;
+    border-bottom: 2px solid var(--header-color);
+    width: 84.5%;
+    font-size: 30px;
+    color: var(--imperial-color);
+}
+
+.imp-noticia-principal {
+    grid-area: imperial-principal;
+}
+
+.imp-noticia-principal img {
+    margin-left: 5%;
+    width: 400px;
+    height: 380px;
+}
+
+.imp-noticia-secundaria-1 {
+    grid-area: imperial-secundario-1;
+}
+
+.imp-noticia-secundaria-1 img {
+    width: 326.312px;
+    height: 183.547px;
+}
+
+.imp-noticia-secundaria-2 {
+    grid-area: imperial-secundario-2;
+}
+
+.imp-noticia-secundaria-2 img {
+    width: 326.312px;
+    height: 183.547px;
+}
+
+.legenda-imp-principal {
+    position: absolute;
+    color: var(--legenda-color);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: -232%;
+    width: 20%;
+    font-size: 1.6em;
+    left: 3.5%;
+    text-shadow: 1px 2px 3px rgba(0,0,0,.8);
+}
+
+.legenda-imp-secundario-1 {
+    position: absolute;
+    bottom: -212%;
+    width: 17%;
+    color: var(--legenda-color);
+    left: 28%;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+}
+
+.legenda-imp-secundario-2 {
+    position: absolute;
+    bottom: -233%;
+    width: 17%;
+    color: var(--legenda-color);
+    left: 28%;
+    font-weight: 600;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+}
+
+/* FIM IMPERIAL-GRID */
 
 /* HEADER/NAV */
 #header {
@@ -404,6 +541,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 #imperial:hover {
     color: var(--imperial-color);
+}
+
+#sair:hover {
+    color: var(--sair-color);
 }
 
 /* FIM DO HEADER/NAV */

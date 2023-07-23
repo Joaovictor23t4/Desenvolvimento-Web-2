@@ -3,7 +3,7 @@ if(!isset($_SESSION)) {
     session_start();
 }
 
-include('../Formulário/Login/protecao.php')
+include('../Formulário/Login/protecao.php');
 
 ?>
 
@@ -29,7 +29,7 @@ include('../Formulário/Login/protecao.php')
             <li> <a href="furia.html" target="_blank" id="furia">FURIA</a> </li>
             <li> <a href="imperial.html" target="_blank" id="imperial">Imperial</a> </li>
             <li> <a href="sk.html" target="_blank" id="sk">SK</a> </li>
-            <li> <a href="../Formulário/Login/logout.php">SAIR</a> </li>
+            <li> <a href="../Formulário/Login/logout.php" id="sair">SAIR</a> </li>
         </ul>
 
         <div class="mudarTema">
@@ -127,6 +127,61 @@ include('../Formulário/Login/protecao.php')
         <div class="furia-noticia-secundaria-2">
             <a href="FURIA/furia-parceria.html" target="_blank"><img src="../Imagens/Furia/furia-parceria-esl.webp" alt="Furia assina contrato e vira a nova parceira da ESL"></a>
         </div>
+
+        <div class="legenda-furia-principal">
+            <h3>Em um jogo acirrado a FURIA perde por 2x1 e está eliminada do IEM Rio Major 2022</h3>
+        </div>
+
+        <div class="legenda-furia-secundaria-1">
+            <h3>FURIA ganha da NAVI de virada em um jogo histórico no Rio de Janeiro</h3>
+        </div>
+
+        <div class="legenda-furia-secundaria-2">
+            <h3>FURIA assina o Louvre Agreement e se torna a nova parceira da ESL</h3>
+        </div>
+    </article>
+
+    <article id="grid-imperial">
+        <h3 id="secao-imperial">Imperial</h3>
+
+        <div class="imp-noticia-principal">
+        <a href="Imperial/contratacao-imp.html" target="_blank"><img src="../Imagens/Imperial/contratacao-hf.webp" alt="Imperial contrata HEN1 e Felps"></a>
+        </div>
+
+        <div class="imp-noticia-secundaria-1">
+            <a href="Imperial/ultima-vaga.html" target="_blank"><img src="../Imagens/Imperial/imperial-ultima-vaga-rmr.jpg" alt="Imperial conquista a última vaga do RMR"></a>
+        </div>
+
+        <div class="imp-noticia-secundaria-2">
+            <a href="Imperial/last-dance.html" target="_blank"><img src="../Imagens/Imperial/the-last-dance.jpg" alt="The Last Dance é anunciado"></a>
+        </div>
+
+        <div class="legenda-imp-principal">
+            <h3>Imperial anuncia a contratação de HEN1 e Felps</h3>
+        </div>
+
+        <div class="legenda-imp-secundario-1">
+            <h3>Imperial conquista a última vaga do RMR e irá ao Major</h3>
+        </div>
+
+        <div class="legenda-imp-secundario-2">
+            <h3>Imperial anuncia o The Last Dance</h3>
+        </div>
+    </article>
+
+    <article id="grid-sk">
+
+    <div class="sk-noticia-principal">
+        <a href="SK/cologne.html" target="_blank"><img src="../Imagens/SK/sk-major-one-cologne-2016.jpg" alt="Brasileiros conquistam segundo Major seguido"></a>
+    </div>
+
+    <div class="sk-noticia-secundaria-1">
+        <a href="SK/blast.html" target="_blank"><img src="../Imagens/SK/blast-trofeu.jpg" alt="SK ganha BLAST Pro Series Copenhaguen"></a>
+    </div>
+
+    <div class="sk-noticia-secundaria-2">
+        <a href="SK/epicenter.html" target="_blank"><img src="../Imagens/SK/epicenter-2016.jpg" alt="SK conquista EPICENTER 2016"></a>
+    </div>
     </article>
     </main>
     <script src="../JavaScript/index.js"></script>
