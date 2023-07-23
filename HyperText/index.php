@@ -16,6 +16,7 @@ include('../Formulário/Login/protecao.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Estilo/index-style.css">
     <link rel="shortcut icon" href="../controle.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Jornal</title>
 </head>
 <body>
@@ -86,7 +87,7 @@ include('../Formulário/Login/protecao.php');
     </article>
 
     <article id="grid-mibr">
-        <h3 id="secao">MIBR</h3>
+        <h2 id="secao">MIBR</h2>
 
         <div class="mibr-noticia-principal">
            <a href="MIBR/mibr-anuncio.html"><img src="../Imagens/MIBR/mibr-drop-saffe.jpg" alt="Mibr Anuncia Drop e Saffe"/></a>
@@ -114,7 +115,7 @@ include('../Formulário/Login/protecao.php');
     </article>
 
     <article id="grid-furia">
-        <h3 id="secao-furia">FURIA</h3>
+        <h2 id="secao-furia">FURIA</h2>
 
         <div class="furia-noticia-principal">
             <a href="FURIA/furia-perde.html" target="_blank"><img src="../Imagens/Furia/furia-perde.webp" alt="Furia perde para Heroic e está fora do Major Rio"></a>
@@ -142,7 +143,7 @@ include('../Formulário/Login/protecao.php');
     </article>
 
     <article id="grid-imperial">
-        <h3 id="secao-imperial">Imperial</h3>
+        <h2 id="secao-imperial">Imperial</h2>
 
         <div class="imp-noticia-principal">
         <a href="Imperial/contratacao-imp.html" target="_blank"><img src="../Imagens/Imperial/contratacao-hf.webp" alt="Imperial contrata HEN1 e Felps"></a>
@@ -171,18 +172,65 @@ include('../Formulário/Login/protecao.php');
 
     <article id="grid-sk">
 
+    <h2 id="secao-sk">SK Gaming</h2>
+
     <div class="sk-noticia-principal">
         <a href="SK/cologne.html" target="_blank"><img src="../Imagens/SK/sk-major-one-cologne-2016.jpg" alt="Brasileiros conquistam segundo Major seguido"></a>
     </div>
 
     <div class="sk-noticia-secundaria-1">
-        <a href="SK/blast.html" target="_blank"><img src="../Imagens/SK/blast-trofeu.jpg" alt="SK ganha BLAST Pro Series Copenhaguen"></a>
+        <a href="SK/epl.html" target="_blank"><img src="../Imagens/SK/epl-odense-2017-sk.jpg" alt="SK ganha ESL Pro League Odense 2017"></a>
     </div>
 
     <div class="sk-noticia-secundaria-2">
         <a href="SK/epicenter.html" target="_blank"><img src="../Imagens/SK/epicenter-2016.jpg" alt="SK conquista EPICENTER 2016"></a>
     </div>
+
+    <div class="legenda-sk-principal">
+        <h3>Brasileiros conquistam o mundo pela segunda vez seguida e se tornam o melhor time de CSGO</h3>
+    </div>
+
+    <div class="legenda-sk-secundaria-1">
+        <h3>SK Gaming conquista a ESL Pro League Odense 2017</h3>
+    </div>
+
+    <div class="legenda-sk-secundaria-2">
+        <h3>Em uma partida emocionante SK Gaming conquista EPICENTER 2017 por 3x2</h3>
+    </div>
     </article>
+
+    <article id="tabela-hltv">
+        <h2>Ranking HLTV</h2>
+
+        <div class="container-hltv">
+            <img src="../Imagens/MIBR/logo-mibr.png" alt="Logo do MIBR">
+            <img src="../Imagens/Furia/logo-furia.png" alt="Logo da FURIA">
+            <img src="../Imagens/" alt="">
+        </div>
+    </article>
+
+    <footer>
+        <div class="footerContainer">
+        <div class="redes-sociais">
+            <a href="https://github.com/Joaovictor23t4" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://twitter.com/ParthTK1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/joao_tk_victor13/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-portela-rocha-a59886279/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+
+        <div class="navFooter">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Melhores Momentos Brasil</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="copyright">
+            <p>Copyright &copy; 2023 <span class="designed"> Feito por João Victor Portela Rocha</span></p>
+        </div>
+    </footer>
     </main>
     <script src="../JavaScript/index.js"></script>
 </body>
