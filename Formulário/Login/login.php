@@ -22,7 +22,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['cpf'] = $usuario['cpf'];
 
         if(password_verify($senhaLogin, $usuario['senha'])) {
-            header("Location: http://localhost/Desenvolvimento-Web-2-git/HyperText/index.php");
+            header("Location: http://localhost/Desenvolvimento-Web-2/HyperText/index.php");
             exit();
         }
 
