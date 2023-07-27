@@ -22,7 +22,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['cpf'] = $usuario['cpf'];
 
         if(password_verify($senhaLogin, $usuario['senha'])) {
-            header("Location: http://localhost/Desenvolvimento-Web-2/HyperText/index.php");
+            header("Location: http://localhost:81/HyperText/");
             exit();
         }
 
@@ -53,6 +53,8 @@ if(isset($_POST['submit'])) {
         </form>
 
         <a href="../Esquecer a senha/esqueci-senha.php">Esqueci a senha</a>
+
+        <img src="../../Desenvolvimento-Web-2/HyperText/index.php" alt="">
     </div>
 </body>
 </html>

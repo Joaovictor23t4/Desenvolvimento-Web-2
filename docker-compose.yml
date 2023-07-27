@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  php:
+    image: php:8.2-apache
+    container_name: meu-php
+    ports:
+      - "81:80"
+    volumes:
+      - /home/joao.rocha/Documentos/Desenvolvimento-Web-2:/var/www/html
+    links:
+      - db
+
+  db:
+    image: mysql:latest
+    container_name: meu-db
+    ports:
+      - "3307:3307"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: meu-phpmyadmin
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: root
+    depends_on:
+      - db
+volumes:
+  mysql_data:

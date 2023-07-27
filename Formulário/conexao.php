@@ -1,8 +1,8 @@
 <?php
 
-    $dbHost = 'LocalHost';
+    $dbHost = 'db';
     $dbUsername = 'root';
-    $dbPassword = '';
+    $dbPassword = 'root';
     $dbName = 'formulario';
 
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

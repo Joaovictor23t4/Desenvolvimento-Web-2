@@ -100,7 +100,7 @@ include('../Formulário/Login/protecao.php');
         <div class="mibr-noticia-secundaria-2">
             <a href="MIBR/mibr-hen1.html"><img src="../Imagens/MIBR/hen1-banco.webp" alt="HEN1 vai para o banco do MIBR"></a>
         </div>
-
+        point.…"   23 minutes ago   Up 20 minutes   0.0.0.0:8080->80/tcp, :::808
         <div class="legenda-mibr-principal">
             <h3>MIBR oficializa contratação de Saffe e Drop! A dupla estreia no dia 16 de agosto</h3>
         </div>
@@ -197,16 +197,6 @@ include('../Formulário/Login/protecao.php');
     <div class="legenda-sk-secundaria-2">
         <h3>Em uma partida emocionante SK Gaming conquista EPICENTER 2017 por 3x2</h3>
     </div>
-    </article>
-
-    <article id="tabela-hltv">
-        <h2>Ranking HLTV</h2>
-
-        <div class="container-hltv">
-            <img src="../Imagens/MIBR/logo-mibr.png" alt="Logo do MIBR">
-            <img src="../Imagens/Furia/logo-furia.png" alt="Logo da FURIA">
-            <img src="../Imagens/" alt="">
-        </div>
     </article>
 
     <footer>
