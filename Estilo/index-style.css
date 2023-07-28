@@ -36,6 +36,9 @@ body {
     padding: 0;
 }
 
+/* INICIO GRID-SITE-INTEIRO */
+/* FIM GRID-SITE-INTEIRO */
+
 /* HEADER/NAV */
 #header {
     display: flex;
@@ -194,6 +197,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 652px;
 }
 
+#imagem-principal h2 {
+    position: relative;
+    bottom: 23%;
+    left: 5%;
+    color: var(--legenda-color);
+    width: 90%;
+    font-size: 2em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #imagem-secundaria-1 {
     display: inline;
     grid-area: imagem-secundaria-1;
@@ -204,6 +218,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 #imagem-secundaria-1 img {
     max-width: 480px;
     height: 320px;
+}
+
+#imagem-secundaria-1 h2 {
+    position: relative;
+    bottom: 50%;
+    left: 3%;
+    color: var(--legenda-color);
+    width: 90%;
+    font-size: 2em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #imagem-secundaria-2 {
@@ -217,40 +242,15 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 320px;
 }
 
-.legenda-noticia-principal {
-    width: 500px;
-    color: var(--legenda-color);
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 18.5%;
-    bottom: -36%;
-    font-size: 1.4em;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-noticia-secundaria-1 {
-    width: 400px;
-    color: var(--legenda-color);
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 52%;
-    bottom: -2%;
-    font-size: 1.2em;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-noticia-secundaria-2 {
-    width: 400px;
-    color: var(--legenda-color);
-    font-weight: 400;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 52%;
-    bottom: -32%;
-    font-size: 1.2em;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+#imagem-secundaria-2 h2 {
+        position: relative;
+        bottom: 38%;
+        left: 3%;
+        color: var(--legenda-color);
+        width: 80%;
+        font-size: 2em;
+        text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+        font-family: Arial, Helvetica, sans-serif;
 }
 
 /*FIM DO GRID PRINCIPAL*/
@@ -297,15 +297,37 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 95%;
 }
 
+.mibr-noticia-principal h3 {
+    position: relative;
+    bottom: 28%;
+    left: 3%;
+    color: var(--legenda-color);
+    width: 80%;
+    font-size: 1.6em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .mibr-noticia-secundaria-1 {
     grid-area: mibr-secundaria-1;
     max-width: 326.312px;
-    max-height: 183.547px;;
+    max-height: 183.547px;
 }
 
 .mibr-noticia-secundaria-1 img {
     width: 326.312px;
     height: 183.547px;
+}
+
+.mibr-noticia-secundaria-1 h3 {
+    position: relative;
+    bottom: 40%;
+    left: 6%;
+    color: var(--legenda-color);
+    width: 100%;
+    font-size: 1.6em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .mibr-noticia-secundaria-2 {
@@ -317,40 +339,15 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 183.547px;
 }
 
-.legenda-mibr-principal h3 {
-    width: 20%;
-    color: var(--legenda-color);
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
+.mibr-noticia-secundaria-2 h3 {
+    position: relative;
+    bottom: 40%;
     left: 2%;
-    bottom: -100%;
+    color: var(--legenda-color);
+    width: 65%;
     font-size: 1.6em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-mibr-secundaria-1 {
-    width: 12%;
-    color: var(--legenda-color);
-    font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 28%;
-    bottom: -81%;
-    font-size: 1.2em;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-mibr-secundaria-2 {
-    width: 15%;
-    color: var(--legenda-color);
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    position: absolute;
-    left: 28%;
-    bottom: -102%;
-    font-size: 1.2em;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
 /* FIM DO MIBR-GRID */
 
@@ -398,6 +395,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 380px;
 }
 
+.furia-noticia-principal h3 {
+    position: relative;
+    bottom: 36%;
+    left: 7%;
+    color: var(--legenda-color);
+    width: 80%;
+    font-size: 1.8em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .furia-noticia-secundaria-1 {
     grid-area: furia-secundario-1;
 }
@@ -405,6 +413,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .furia-noticia-secundaria-1 img {
     width: 326.312px;
     height: 183.547px;
+}
+
+.furia-noticia-secundaria-1 h3 {
+    position: relative;
+    bottom: 45%;
+    left: 3%;
+    color: var(--legenda-color);
+    width: 65%;
+    font-size: 1.4em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .furia-noticia-secundaria-2 {
@@ -416,42 +435,16 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 183.547px;
 }
 
-.legenda-furia-principal {
-    position: absolute;
-    color: var(--legenda-color);
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    bottom: -167.5%;
-    width: 20%;
-    font-size: 1.4em;
+.furia-noticia-secundaria-2 h3 {
+    position: relative;
+    bottom: 50%;
     left: 3%;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-furia-secundaria-1 {
-    position: absolute;
-    bottom: -147%;
-    width: 17%;
     color: var(--legenda-color);
-    left: 28%;
-    font-weight: 600;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 65%;
+    font-size: 1.4em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-furia-secundaria-2 {
-    position: absolute;
-    bottom: -167%;
-    left: 28%;
-    width: 18%;
-    color: var(--legenda-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    font-weight: 600;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
-
 /* FIM FURIA-GRID */
 
 /* INICIO IMPERIAL-GRID */
