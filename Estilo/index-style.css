@@ -8,17 +8,22 @@
     --legenda-color: #fff;
     --tema-branco: #f7f7f7;
     --tema-escuro: #000;
+    --tema-escuro-2: #000;
     --tema-branco-2: #fff;
+    --tema-branco-3: #f6f6f9;
     --tema-3: #111;
     --tema-4: #000;
     --botao-cor1: #7d1ad4;
     --botao-cor2: #6e17b9;
+    --font-evento: Open Sans,sans-serif;
 }
 
 [data-theme="dark"] {
     --tema-branco: #000;
     --tema-escuro: #f7f7f7;
+    --tema-escuro-2: #fff;
     --tema-branco-2: #000;
+    --tema-branco-3: #000;
     --tema-3: #5327F2;
     --tema-4: #220394;
 }
@@ -255,6 +260,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 /*FIM DO GRID PRINCIPAL*/
 
+/* INICIO CONTAINER-MIBR-ANUNCIO */
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* MIBR-GRID */
 
 #grid-mibr {
@@ -283,7 +295,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     position: relative;
     bottom: 60px;
     border-bottom: 2px solid var(--header-color);
-    width: 86.8%;
+    width: 84.4%;
     font-size: 30px;
     color: var(--mibr-primary-color);
 }
@@ -350,6 +362,36 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     font-family: Arial, Helvetica, sans-serif;
 }
 /* FIM DO MIBR-GRID */
+
+/* INICIO ANUNCIO */
+
+#anuncio {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 10%;
+    margin-right: .5%;
+    width: 640px;
+    height: 500px;
+    animation-name: anuncio;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+@keyframes anuncio {
+    0% {background-image: url("../Imagens/anuncios/brazino777.png");}
+
+    25% {background-image: url("../Imagens/anuncios/liquid.png");}
+
+    50% {background-image: url("../Imagens/anuncios/mcdonalds.jpg");}
+
+    100% {background-image: url("../Imagens/anuncios/betano.png");}
+}
+
+/* FIM ANUNCIO */
+
+/* FIM CONTAINER-MIBR-ANUNCIO */
 
 /* INICIO FURIA-GRID */
 
@@ -447,6 +489,111 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 /* FIM FURIA-GRID */
 
+/* INICIO ABA PRÓXIMO-EVENTOS */
+
+#proximos-eventos {
+    margin-top: 8%;
+    width: 35%;
+}
+
+#secao-eventos {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: var(--font-evento);
+    opacity: 1;
+    font-family: 'Oswald', sans-serif;
+    grid-area: nome;
+    position: relative;
+    bottom: 5px;
+    border-bottom: 2px solid var(--header-color);
+    width: 100%;
+    font-size: 30px;
+    color: var(--tema-escuro
+    );
+}
+
+.informacoes-evento {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--tema-branco-2);
+    box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+    margin-top: 6px;
+}
+
+.informacoes-evento-2 {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: var(--tema-branco-3);
+    box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
+    margin-top: 6px;
+}
+
+.tabela {
+    width: calc(100% - 34px);
+    color: inherit;
+    font-weight: inherit;
+    color: var(--tema-escuro-2);
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.nome-evento {
+    font-family: var(--font-evento);
+    font-weight: 700;
+    margin-right: 5%;
+}
+
+.n-times {
+    width: 13.3333%;
+    font-weight: 700;
+}
+
+.prizepool {
+    max-width: 77px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 13.3333%;
+    font-weight: 700;
+}
+
+.atividade {
+    width: 13.3333%;
+    font-weight: 700;
+    font-family: var(--font-evento);
+}
+
+.logo-evento img {
+    position: relative;
+    width: 34px;
+    height: 34px;
+    right: 20%;
+}
+
+.col-desc{
+    opacity: .75;
+    font-size: 14px;
+    font-family: var(--font-evento);
+}
+
+.pais-evento img {
+    margin-right: 5px;
+    height: 12px;
+    width: 18px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    background-color: rgba(0,0,0,.05);
+}
+
+/* FIM ABA PRÓXIMO-EVENTOS */
+
 /* INICIO IMPERIAL-GRID */
 
 #grid-imperial {
@@ -490,6 +637,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 380px;
 }
 
+.imp-noticia-principal h3 {
+    position: relative;
+    bottom: 32%;
+    left: 8%;
+    color: var(--legenda-color);
+    width: 80%;
+    font-size: 2em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .imp-noticia-secundaria-1 {
     grid-area: imperial-secundario-1;
 }
@@ -497,6 +655,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .imp-noticia-secundaria-1 img {
     width: 326.312px;
     height: 183.547px;
+}
+
+.imp-noticia-secundaria-1 h3 {
+    position: relative;
+    bottom: 40%;
+    left: 2.5%;
+    color: var(--legenda-color);
+    width: 70%;
+    font-size: 1.4em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .imp-noticia-secundaria-2 {
@@ -508,40 +677,15 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 183.547px;
 }
 
-.legenda-imp-principal {
-    position: absolute;
+.imp-noticia-secundaria-2 h3 {
+    position: relative;
+    bottom: 35%;
+    left: 3%;
     color: var(--legenda-color);
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    bottom: -232%;
-    width: 20%;
-    font-size: 1.6em;
-    left: 3.5%;
-    text-shadow: 1px 2px 3px rgba(0,0,0,.8);
-}
-
-.legenda-imp-secundario-1 {
-    position: absolute;
-    bottom: -212%;
-    width: 17%;
-    color: var(--legenda-color);
-    left: 28%;
-    font-weight: 600;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 70%;
+    font-size: 1.4em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
-}
-
-.legenda-imp-secundario-2 {
-    position: absolute;
-    bottom: -233%;
-    width: 17%;
-    color: var(--legenda-color);
-    left: 28%;
-    font-weight: 600;
-    font-size: 1.2em;
     font-family: Arial, Helvetica, sans-serif;
-    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
 
 /* FIM IMPERIAL-GRID */
@@ -590,6 +734,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 380px;
 }
 
+.sk-noticia-principal h3 {
+    position: relative;
+    bottom: 42%;
+    left: 7%;
+    color: var(--legenda-color);
+    width: 80%;
+    font-size: 2em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .sk-noticia-secundaria-1 {
     grid-area: sk-secundario-1;
 }
@@ -599,6 +754,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     height: 183.547px;
 }
 
+.sk-noticia-secundaria-1 h3 {
+    position: relative;
+    bottom: 40%;
+    left: 2.5%;
+    color: var(--legenda-color);
+    width: 70%;
+    font-size: 1.4em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .sk-noticia-secundaria-2 {
     grid-area: sk-secundario-2;
 }
@@ -606,6 +772,17 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .sk-noticia-secundaria-2 img {
     width: 326.312px;
     height: 183.547px;
+}
+
+.sk-noticia-secundaria-2 h3 {
+    position: relative;
+    bottom: 45%;
+    left: 1.5%;
+    color: var(--legenda-color);
+    width: 70%;
+    font-size: 1.4em;
+    text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .legenda-sk-principal {
