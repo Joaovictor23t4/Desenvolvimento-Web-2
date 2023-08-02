@@ -377,7 +377,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     width: 640px;
     height: 500px;
     animation-name: anuncio;
-    animation-duration: 20s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     border-radius: 20px;
 }
@@ -385,11 +385,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 @keyframes anuncio {
     0% {background-image: url("../Imagens/anuncios/brazino777.png");}
 
-    25% {background-image: url("../Imagens/anuncios/liquid.png");}
+    20% {background-image: url("../Imagens/anuncios/liquid.png");}
 
-    50% {background-image: url("../Imagens/anuncios/mcdonalds.jpg");}
+    40% {background-image: url("../Imagens/anuncios/mcdonalds.jpg");}
 
-    100% {background-image: url("../Imagens/anuncios/betano.png");}
+    60% {background-image: url("../Imagens/anuncios/betano.png");}
+
+    100% {background-image: url(../Imagens/anuncios/brazino777.png);}
 }
 
 /* FIM ANUNCIO */
@@ -986,6 +988,31 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
 }
 /* FIM SK-GRID */
+
+/* INICIO ANUNCIO-2 */
+#anuncio-2 {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    margin-top: 10%;
+    margin-right: .5%;
+    width: 640px;
+    height: 500px;
+    animation-name: anuncio-2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border-radius: 20px;
+}
+
+@keyframes anuncio-2 {
+    0% {background-image: url(../Imagens/anuncios-2/bradesco.jpg);}
+    20% {background-image: url(../Imagens/anuncios-2/latam.png);}
+    40% {background-image: url(../Imagens/anuncios-2/intel.jpg);}
+    60% {background-image: url(../Imagens/anuncios-2/redbull.jpg);}
+    80% {background-image: url(../Imagens/anuncios-2/nike.jpg);}
+    100% {background-image: url(../Imagens/anuncios-2/bradesco.jpg);}
+}
+/* FIM ANUNCIO-2 */
 
 /* ALTERNAR TEMA */
 .mudarTema {
