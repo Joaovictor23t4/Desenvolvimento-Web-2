@@ -182,8 +182,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     grid-template-areas:
     "imagem-principal imagem-secundaria-1"
     "imagem-principal imagem-secundaria-2";
-    grid-template-columns: 598.484px 598.5px;
-    grid-template-rows: 320.359px 320.359px;
+    grid-template-columns: 35% 35%;
+    grid-template-rows: 53% 53%;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
     margin-top: 100px;
@@ -201,8 +201,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 
 #imagem-principal img {
-    max-width: 600px;
-    height: 652px;
+    max-width: 100%;
+    height: 100%;
 }
 
 #imagem-principal h2 {
@@ -224,8 +224,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 
 #imagem-secundaria-1 img {
-    max-width: 480px;
-    height: 320px;
+    max-width: 100%;
+    height: 120%;
 }
 
 #imagem-secundaria-1 h2 {
@@ -246,8 +246,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 
 #imagem-secundaria-2 img {
-    max-width: 480px;
-    height: 320px;
+    max-width: 100%;
+    height: 100%;
 }
 
 #imagem-secundaria-2 h2 {
@@ -374,7 +374,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     justify-content: flex-end;
     margin-top: 10%;
     margin-right: .5%;
-    width: 640px;
+    width: 34%;
     height: 500px;
     animation-name: anuncio;
     animation-duration: 30s;
@@ -391,7 +391,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
     60% {background-image: url("../Imagens/anuncios/betano.png");}
 
-    100% {background-image: url(../Imagens/anuncios/brazino777.png);}
+    100% {background-image: url("../Imagens/anuncios/brazino777.png");}
 }
 
 /* FIM ANUNCIO */
@@ -509,29 +509,29 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     bottom: 5px;
     border-bottom: 2px solid var(--header-color);
     width: 100%;
-    font-size: 30px;
+    font-size: 1.875em;
     color: var(--tema-escuro
     );
 }
 
 .informacoes-evento {
-    padding: 10px;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: var(--tema-branco-2);
     box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
-    margin-top: 6px;
+    margin-top: 1%;
 }
 
 .informacoes-evento-2 {
-    padding: 10px;
+    padding: 2%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     background-color: var(--tema-branco-3);
     box-shadow: 0 1px 2px 0 rgba(50,50,50,.4);
-    margin-top: 6px;
+    margin-top: 1%;
 }
 
 .tabela {
@@ -574,14 +574,14 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 .logo-evento img {
     position: relative;
-    width: 34px;
+    width: 100%;
     height: 34px;
     right: 20%;
 }
 
 .col-desc{
     opacity: .75;
-    font-size: 14px;
+    font-size: 0.9em;
     font-family: var(--font-evento);
 }
 
