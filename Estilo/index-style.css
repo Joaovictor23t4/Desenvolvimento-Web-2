@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
 :root {
     --header-color: #5327F2;
     --header-second-color: #7655ee;
@@ -18,6 +20,7 @@
     --botao-cor1: #7d1ad4;
     --botao-cor2: #6e17b9;
     --font-evento: Open Sans,sans-serif;
+    --font-titulos-noticias: font-family: 'REM', sans-serif;
 }
 
 [data-theme="dark"] {
@@ -116,6 +119,12 @@ body {
     flex-wrap: row nowrap;
     gap: 15px;
     cursor: pointer;
+}
+
+.noticias p {
+    position: relative;
+    font-size: 20px;
+    font-family: var(--font-titulos-noticias);
 }
 
 .arrow-left,
@@ -224,8 +233,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 }
 
 #imagem-secundaria-1 img {
-    max-width: 100%;
-    height: 120%;
+    max-width: 480px;
+    height: 262.31px;
 }
 
 #imagem-secundaria-1 h2 {
