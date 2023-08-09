@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
 
 :root {
     --header-color: #5327F2;
@@ -20,7 +20,7 @@
     --botao-cor1: #7d1ad4;
     --botao-cor2: #6e17b9;
     --font-evento: Open Sans,sans-serif;
-    --font-titulos-noticias: font-family: 'REM', sans-serif;
+    --font-titulos-noticias:'Noto Sans', sans-serif,'Nunito Sans', sans-serif;
 }
 
 [data-theme="dark"] {
@@ -121,10 +121,12 @@ body {
     cursor: pointer;
 }
 
-.noticias p {
+.noticias > p {
     position: relative;
-    font-size: 20px;
+    font-size: 1.3em;
     font-family: var(--font-titulos-noticias);
+    text-align: center;
+    font-weight: 700;
 }
 
 .arrow-left,
@@ -291,7 +293,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
      grid-template-rows: 50px 200px 200px;
      justify-content: flex-start;
      margin-left: 1%;
-     background-color: var(--tema-branco-2);
+     background-color: var(--tema-branco);
      width: 43.8%;
      margin-top: 10%;    
     }
@@ -346,10 +348,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .mibr-noticia-secundaria-1 h3 {
     position: relative;
     bottom: 40%;
-    left: 6%;
+    left: 3%;
     color: var(--legenda-color);
     width: 100%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -366,10 +368,10 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 .mibr-noticia-secundaria-2 h3 {
     position: relative;
     bottom: 40%;
-    left: 2%;
+    left: 3%;
     color: var(--legenda-color);
     width: 65%;
-    font-size: 1.6em;
+    font-size: 1.4em;
     text-shadow: 1px 1.5px 3px rgba(0,0,0,.8);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -420,8 +422,9 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     justify-content: flex-start;
     margin-left: 1%;
     margin-top: 10%;
-    background-color: var(--tema-branco-2);
+    background-color: var(--tema-branco);
     width: 43.8%;
+    height: 500px;
 }
 
 #grid-furia img {
@@ -618,7 +621,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     justify-content: flex-start;
     margin-left: 1%;
     margin-top: 10%;
-    background-color: var(--tema-branco-2);
+    background-color: var(--tema-branco);
     width: 43.8%;
 }
 
@@ -879,7 +882,7 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
     justify-content: flex-start;
     margin-left: 1%;
     margin-top: 10%;
-    background-color: var(--tema-branco-2);
+    background-color: var(--tema-branco);
     width: 43.8%;
 }
 
