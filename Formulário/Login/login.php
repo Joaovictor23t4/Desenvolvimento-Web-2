@@ -22,7 +22,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['cpf'] = $usuario['cpf'];
 
         if(password_verify($senhaLogin, $usuario['senha'])) {
-            header("Location: http://localhost:81/HyperText/");
+            header("Location: http://localhost/Desenvolvimento-Web-2/HyperText/");
             exit();
         }
 

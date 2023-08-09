@@ -127,6 +127,7 @@ body {
     font-family: var(--font-titulos-noticias);
     text-align: center;
     font-weight: 700;
+    color: var(--tema-escuro-2);
 }
 
 .arrow-left,
