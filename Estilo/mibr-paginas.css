@@ -16,10 +16,32 @@
     box-sizing: border-box;
 }
 
-#header {
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*#header {
     display: flex;
     justify-content: center;
     background-color: var(--header-color);
+}
+
+#header img {
+    width: 8%;
+}*/
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-principal);
+}
+
+#header {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #header img {
@@ -28,18 +50,8 @@
 
 #menu {
     display: flex;
-    justify-content: space-around;
-    background-color: var(--nav-color);
-    padding: .2%;
-    font-weight: 600;
-}
-
-#menu li, a {
     list-style: none;
-    text-decoration: none;
-    font-family: var(--font-principal);
-    font-size: 1.15em;
-    color: #fff;
+    gap: 1rem;
 }
 
 #home:hover {
