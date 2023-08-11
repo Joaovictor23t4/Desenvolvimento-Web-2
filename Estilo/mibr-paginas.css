@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@300&display=swap');
 
 :root {
     --header-color: #0d122e;
     --nav-color: #fbc146;
+    --link-color: #fff;
+    --topico-hover: invert(100%) sepia(0) saturate(0) hue-rotate(239deg) brightness(105%) contrast(101%);
     --font-principal:'Noto Sans', sans-serif;
+    --font-topico:'Open Sans', sans-serif;
     --home-color: #5327F2;
     --furia-and-sk-color: #000;
     --imperial-color: #0cd664;
@@ -33,25 +37,118 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--link-color);
     font-family: var(--font-principal);
 }
 
-#header {
-    display: flex;
-    padding: 1rem;
-    align-items: center;
-    justify-content: space-between;
+li {
+    list-style: none;
 }
 
-#header img {
+#header {
+    background-color: var(--header-color);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+#header > img {
     width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topico {
+    position: relative;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    line-height: normal;
+    font-family: var(--font-topico);
+}
+
+#topico > a:hover {
+    transition: .9s;
+    color: #b1b5be;
+}
+
+#nav {
+    min-height: 70px;
+    display: flex;
 }
 
 #menu {
     display: flex;
-    list-style: none;
-    gap: 1rem;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: .6s ease;
+}
+
+.nav-link:hover {
+    opacity: .6;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    top: 25%;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    #header > img {
+        width: 10%;
+    }
+    .hamburguer {
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    #menu.active {
+        left: 0;
+    }
 }
 
 #home:hover {
