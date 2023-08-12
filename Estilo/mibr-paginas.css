@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Open+Sans:wght@300&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
 
 :root {
     --header-color: #0d122e;
@@ -8,6 +10,7 @@
     --topico-hover: invert(100%) sepia(0) saturate(0) hue-rotate(239deg) brightness(105%) contrast(101%);
     --font-principal:'Noto Sans', sans-serif;
     --font-topico:'Open Sans', sans-serif;
+    --font-texto:'Arimo', sans-serif;
     --home-color: #5327F2;
     --furia-and-sk-color: #000;
     --imperial-color: #0cd664;
@@ -161,4 +164,150 @@ li {
 
 #imperial:hover {
     color: var(--imperial-color);
+}
+
+main {
+    display: grid;
+    font-family: var(--font-texto);
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#anuncio-principal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+#anuncio-flex > img {
+    width: 970px;
+    height: 250px;
+}
+
+#article-header {
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "autor autor"
+    "titulo titulo"
+    "data data";
+    grid-template-columns: 100%;
+    max-width: 680px;
+    width: 70%;
+    margin-left: 15%; 
+}
+
+#grid-autor {
+    display: grid;
+    grid-area: autor;
+}
+
+#autor {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#margem {
+    margin-right: 1rem;
+}
+
+#margem > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#informacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#por-autor {
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-size: 1.125em;
+}
+
+#informacoes-autor {
+    margin-bottom: 3%;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#grid-titulo {
+    display: grid;
+    grid-area: titulo;
+    margin: 20px auto 20px auto;
+}
+
+#titulo {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#titulo > h1 {
+    font-feature-settings: initial;
+    font-size: 2.5em;
+    font-variation-settings: initial;
+    line-height: 48px;
+}
+
+#sub-titulo {
+    margin-top: 16px;
+}
+
+#sub-titulo > h2 {
+    font-feature-settings: initial;
+    font-size: 0.93em;
+    font-variation-settings: initial;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#data-pub {
+    display: grid;
+    grid-area: data;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+#assinatura {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#conteudo-data {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#data-texto {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
