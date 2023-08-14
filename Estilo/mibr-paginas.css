@@ -283,25 +283,6 @@ main {
     margin-bottom: 16px;
 }
 
-#assinatura {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-#conteudo-data {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 
 #data-texto {
     margin: 0;
@@ -318,13 +299,15 @@ main {
     align-items: flex-start;
 }
 
-#article-materia > img {
-    width: 25%;
+#anuncio-materia > img {
+    width: 400px;
     float: left;
-    margin-left: 50px;
+    border: 2px solid black;
 }
 
-#article-materia > p {
-    margin-right: 50px;
-    width: 20%;
+#anuncio-materia > p {
+    display: inline-block;
+    margin-left: 30px;
+    width: 450px;
+    font-family: var(--font-principal);
 }
