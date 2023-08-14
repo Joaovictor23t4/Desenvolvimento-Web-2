@@ -7,9 +7,18 @@ function updatePostTime() {
   
     if (timeDiffMinutes < 60) {
       updateTimeElement.textContent = `há ${timeDiffMinutes} minutos`;
-    } else {
+    } else if (timeDiffMinutes > 60 && timeDiffMinutes < 120) {
       const timeDiffHours = Math.floor(timeDiffMinutes / 60); // Diferença em horas
+      updateTimeElement.textContent = `há ${timeDiffHours} hora`;
+    } else if (timeDiffMinutes >= 120 && timeDiffMinutes < 1440) {
+      const timeDiffHours = Math.floor(timeDiffMinutes / 60);
       updateTimeElement.textContent = `há ${timeDiffHours} horas`;
+    } else if (timeDiffMinutes >= 1440 && timeDiffMinutes < 2880) {
+      const timeDiffHours = Math.floor(timeDiffMinutes / 1440);
+      updateTimeElement.textContent = `há ${timeDiffHours} dia`;
+    } else {
+      const timeDiffHours = Math.floor(timeDiffMinutes /1440);
+      updateTimeElement.textContent = `há ${timeDiffHours} dias`;
     }
   }
   

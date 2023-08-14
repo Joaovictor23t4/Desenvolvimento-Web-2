@@ -170,6 +170,7 @@ main {
     display: grid;
     font-family: var(--font-texto);
     justify-content: center;
+    justify-items: center;
     align-items: center;
     margin-top: 3%;
 }
@@ -195,7 +196,6 @@ main {
     grid-template-columns: 100%;
     max-width: 680px;
     width: 70%;
-    margin-left: 15%; 
 }
 
 #grid-autor {
@@ -310,4 +310,21 @@ main {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+
+#article-materia {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#article-materia > img {
+    width: 25%;
+    float: left;
+    margin-left: 50px;
+}
+
+#article-materia > p {
+    margin-right: 50px;
+    width: 20%;
 }
