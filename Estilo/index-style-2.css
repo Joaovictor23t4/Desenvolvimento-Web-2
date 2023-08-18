@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Nunito+Sans:opsz,wght@6..12,500&family=Open+Sans:wght@300&display=swap');
+
+:root {
+    --header-color: #5327F2;
+    --header-second-color: #7655ee;
+    --mibr-primary-color: #dea83d;
+    --furia-and-sk-color: #000;
+    --imperial-color: #0cd664;
+    --sair-color: rgb(230, 57, 57);
+    --hltv-color: #2b6ea4;
+    --link-color: #fff;
+    --font-principal:'Noto Sans', sans-serif;
+    --font-topico:'Open Sans', sans-serif;
+    --legenda-color: #fff;
+    --tema-branco: #f7f7f7;
+    --tema-escuro: #000;
+    --tema-escuro-2: #000;
+    --tema-branco-2: #fff;
+    --tema-branco-3: #f6f6f9;
+    --tema-branco-4: hsla(0,0%,100%,.8);
+    --tema-3: #111;
+    --tema-4: #000;
+    --botao-cor1: #7d1ad4;
+    --botao-cor2: #6e17b9;
+    --font-evento: Open Sans,sans-serif;
+    --font-titulos-noticias:'Noto Sans', sans-serif,'Nunito Sans', sans-serif;
+}
+
+[data-theme="dark"] {
+    --tema-branco: #000;
+    --tema-escuro: #f7f7f7;
+    --tema-escuro-2: #fff;
+    --tema-branco-2: #000;
+    --tema-branco-3: #000;
+    --tema-branco-4: #000;
+    --tema-3: #5327F2;
+    --tema-4: #220394;
+    --link-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--tema-branco);
+    transition: background-color .8s;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-family: var(--font-principal);
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    background-color: var(--header-color);
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+}
+
+#header > img {
+    width: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#topico {
+    position: relative;
+    color: #fff;
+    font-size: 1.8em;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    line-height: normal;
+    font-family: var(--font-topico);
+}
+
+#topico > a:hover {
+    transition: .9s;
+    color: #b1b5be;
+}
+
+#nav {
+    min-height: 70px;
+    display: flex;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    .container {
+        position: relative;
+        padding: 15px;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+
+    .container {
+        position: relative;
+        padding: 15px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
+
+.nav-link {
+    transition: .6s ease;
+}
+
+.nav-link:hover {
+    opacity: .6;
+}
+
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 28px;
+    height: 3px;
+    top: 25%;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+@media (max-width: 700px) {
+    .hamburguer {
+        display: block;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    #menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        background-color: #101026;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: .3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    #menu.active {
+        left: 0;
+        z-index: 1;
+    }
+}
+
+/* ALTERNAR TEMA */
+.mudarTema {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1%;
+    margin-right: 1%;
+}
+
+.mudarTema button {
+    background-color: var(--botao-cor1);
+    border-radius: 50%;
+    padding: .4rem;
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.mudarTema button:hover {
+    background-color: var(--botao-cor2);
+    transition: 400ms;
+}
+
+svg {
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+/* FIM DO ALTERNAR TEMA */
+
+/* CAROUSEL */
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.noticias-wrapper {
+    overflow-x: auto;
+}
+
+.noticias {
+    display: flex;
+    flex-wrap: row nowrap;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.noticias > p {
+    position: relative;
+    font-size: 1.3em;
+    font-family: var(--font-titulos-noticias);
+    text-align: center;
+    font-weight: 700;
+    color: var(--tema-escuro-2);
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    font-size: 20px;
+    line-height: 250px;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(to left, transparent 0%, black 200%);
+    opacity: .1;
+    transition: all 600ms ease-in-out;
+}
+
+.arrow-right {
+    left: auto;
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    opacity: 1;
+}
+
+.item {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    opacity: .6;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.noticias-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.noticias-wrapper {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* FIM DO CAROUSEL */
