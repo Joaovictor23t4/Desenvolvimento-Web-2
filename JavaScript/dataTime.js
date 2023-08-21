@@ -9,20 +9,20 @@ function updatePostTime() {
     const timeDiffMinutes = Math.floor((currentTime - updateTimestamp) / (60 * 1000));
 
     if (timeDiffMinutes === 1) {
-      updateTimeElement.textContent = `há ${timeDiffMinutes} minuto`;
+      updateTimeElement.textContent = `há ${timeDiffMinutes} minuto —`;
     }
      else if (timeDiffMinutes < 60) {
-      updateTimeElement.textContent = `há ${timeDiffMinutes} minutos`;
+      updateTimeElement.textContent = `há ${timeDiffMinutes} minutos —`;
     } else if (timeDiffMinutes < 120) {
-      updateTimeElement.textContent = `há 1 hora`;
+      updateTimeElement.textContent = `há 1 hora —`;
     } else if (timeDiffMinutes < 1440) {
       const timeDiffHours = Math.floor(timeDiffMinutes / 60);
-      updateTimeElement.textContent = `há ${timeDiffHours} horas`;
+      updateTimeElement.textContent = `há ${timeDiffHours} horas —`;
     } else if (timeDiffMinutes < 2880) {
-      updateTimeElement.textContent = `há 1 dia`;
+      updateTimeElement.textContent = `há 1 dia —`;
     } else {
       const timeDiffDays = Math.floor(timeDiffMinutes / 1440);
-      updateTimeElement.textContent = `há ${timeDiffDays} dias`;
+      updateTimeElement.textContent = `há ${timeDiffDays} dias —`;
     }
   }
 }

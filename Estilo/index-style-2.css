@@ -256,13 +256,13 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 main {
     display: grid;
-    justify-items: center;
     align-items: center;
     margin-top: 50px;
 }
 
 .noticia-grid {
     display: grid;
+
     justify-items: center;
 }
 
@@ -272,6 +272,7 @@ main {
     display: block;
     margin-top: 20px;
     height: 1px;
+    margin-bottom: 20px;
 }
 
 #noticia-article {
@@ -296,7 +297,7 @@ main {
     "topico topico"
     "titulo titulo"
     "publicacao publicacao";
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr 1fr;
     margin-left: 20px;
 }
 
@@ -348,6 +349,23 @@ main {
 }
 
 .publicacao-section {
+    display: none;
+}
+
+.anuncio {
+    animation-name: anuncio;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    width: 50%;
+}
+
+.borda-anuncio {
+    text-align: center;
+    font-family: var(--font-evento);
+    font-size: 12px;
+}
+
+.quebra-de-pagina {
     display: none;
 }
 
@@ -454,6 +472,26 @@ main {
         padding: 0px 30px 30px 30px;
     }
 
+    #h2-section::after {
+        content: "";
+        border-bottom: 1px solid #c8c8c8;
+        display: block;
+        margin-top: 20px;
+        height: 1px;
+    }
+
+    .h3-class-section {
+        margin-top: 10px;
+    }
+
+    .h3-class-section::after {
+        content: "";
+        border-bottom: 1px solid #c8c8c8;
+        display: block;
+        margin-top: 10px;
+        height: 1px;
+    }
+
     .publicacao-section {
         display: block;
         grid-area: publicacao;
@@ -484,6 +522,15 @@ main {
 
     .imagem-grid-1920 {
         display: none;
+    }
+
+    .quebra-de-pagina {
+        display: block;
+        height: 20px;
+    }
+
+    .noticia-grid {
+        box-shadow: 1px 1px 1px #00000021;
     }
 }
 
