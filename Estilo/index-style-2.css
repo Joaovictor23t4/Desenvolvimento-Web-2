@@ -21,8 +21,9 @@
     --tema-branco-3: #f6f6f9;
     --tema-branco-4: hsla(0,0%,100%,.8);
     --tema-3: #111;
-    --tema-4: #000;
+    --tema-4: #4318DE;
     --tema-5: #220394;
+    --tema-quebra-pagina: #c8c8c8;
     --botao-cor1: #7d1ad4;
     --botao-cor2: #6e17b9;
     --font-evento: 'Open Sans', sans-serif;
@@ -39,8 +40,9 @@
     --tema-branco-3: #000;
     --tema-branco-4: #000;
     --tema-3: #5327F2;
-    --tema-4: #220394;
+    --tema-4: #4318DE;
     --tema-5: #220394;
+    --tema-quebra-pagina: #5327F2;
     --link-color: #fff;
 }
 
@@ -326,8 +328,9 @@ main {
 }
 
 .lista-materia {
-    color: var(--tema-5);
+    color: var(--tema-4);
     margin-top: 10px;
+    font-family: var(--font-evento-500);
 }
 
 .publicacao-1920 {
@@ -427,6 +430,11 @@ main {
         width: 70px;
     }
 
+    #border-top-section {
+        border-top: 1px solid #c8c8c8;
+        display: block;
+       }
+
     #noticia-article {
         display: grid;
         grid-template-areas:
@@ -436,7 +444,7 @@ main {
         "publicacao publicacao";
         grid-template-columns: 100%;
         width: 100%;
-        background-color: #fff;
+        background-color: var(--tema-branco-2);
     }
 
     .borda-cima {
@@ -464,15 +472,25 @@ main {
         text-shadow: none;
     }
 
+    .topico-section > p {
+        font-family: var(--font-evento-500);
+        font-size: 0.8em;
+        color: var(--tema-escuro);
+    }
+
     .titulo-section {
         display: block;
         grid-area: titulo;
         font-family: var(--font-evento);
-        color: var(--header-second-color);
+        color: var(--tema-4);
         padding: 0px 30px 30px 30px;
     }
 
-    #h2-section::after {
+    .h2-section {
+        color: var(--header-second-color);
+    }
+
+    .h2-section::after {
         content: "";
         border-bottom: 1px solid #c8c8c8;
         display: block;
@@ -481,23 +499,27 @@ main {
     }
 
     .h3-class-section {
-        margin-top: 10px;
+        margin-top: 15px;
+        font-size: 1em;
+        font-family: var(--font-evento-500);
     }
 
     .h3-class-section::after {
         content: "";
         border-bottom: 1px solid #c8c8c8;
         display: block;
-        margin-top: 10px;
+        margin-top: 15px;
         height: 1px;
     }
 
     .publicacao-section {
         display: block;
         grid-area: publicacao;
-        padding: 10px;
+        padding: 10px 10px 0 10px;
         font-family: var(--font-evento);
         font-size: 16px;
+        color: var(--tema-escuro);
+        margin-bottom: 20px;
     }
 
     .container-1920 {
@@ -527,10 +549,11 @@ main {
     .quebra-de-pagina {
         display: block;
         height: 20px;
+        background-color: var(--tema-quebra-pagina);
     }
 
     .noticia-grid {
-        box-shadow: 1px 1px 1px #00000021;
+        box-shadow: 1px 1px 10px #00000021;
     }
 }
 
