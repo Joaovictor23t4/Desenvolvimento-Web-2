@@ -264,7 +264,6 @@ main {
 
 .noticia-grid {
     display: grid;
-
     justify-items: center;
 }
 
@@ -292,6 +291,11 @@ main {
     grid-area: imagem;
 }
 
+.imagem-grid-1920 > img {
+    width: 100%;
+    border-radius: 5%;
+}
+
 .conteudo-grid-1920 {
     display: grid;
     grid-area: conteudo;
@@ -303,10 +307,6 @@ main {
     margin-left: 20px;
 }
 
-.imagem-grid-1920 > img {
-    width: 100%;
-}
-
 .topico-1920 {
     grid-area: topico;
     font-family: var(--font-evento-500);
@@ -316,7 +316,7 @@ main {
 
 .titulo-1920 {
     grid-area: titulo;
-    font-family: var(--font-evento);
+    font-family: var(--font-evento-500);
 }
 
 .titulo-1920 > h1 {
@@ -324,13 +324,13 @@ main {
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin: 0;
-    color: var(--header-second-color);
+    color: var(--tema-4);
 }
 
 .lista-materia {
-    color: var(--tema-4);
+    color: var(--header-color);
     margin-top: 10px;
-    font-family: var(--font-evento-500);
+    font-family: var(--font-evento);
 }
 
 .publicacao-1920 {
@@ -372,9 +372,22 @@ main {
     display: none;
 }
 
+.section-anuncio {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+    "topico topico"
+    "anuncio anuncio";
+}
+
+.section-anuncio > h1 {
+    display: grid;
+    grid-area: topico;
+}
+
 @media (min-width: 1301px) and (max-width:1511px) {
     .titulo-1920 > h1 {
-        font-size: 1.17em;
+        font-size: 1.3em;
     }
 }
 
@@ -481,13 +494,13 @@ main {
     .titulo-section {
         display: block;
         grid-area: titulo;
-        font-family: var(--font-evento);
-        color: var(--tema-4);
+        font-family: var(--font-evento-500);
+        color: var(--header-color);
         padding: 0px 30px 30px 30px;
     }
 
     .h2-section {
-        color: var(--header-second-color);
+        color: var(--tema-4);
     }
 
     .h2-section::after {
@@ -501,7 +514,7 @@ main {
     .h3-class-section {
         margin-top: 15px;
         font-size: 1em;
-        font-family: var(--font-evento-500);
+        font-family: var(--font-evento);
     }
 
     .h3-class-section::after {
