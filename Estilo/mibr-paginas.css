@@ -311,3 +311,27 @@ main {
     width: 450px;
     font-family: var(--font-principal);
 }
+
+@media (max-width: 1100px) and (min-width: 860px) {
+    #anuncio-flex > img {
+        width: 800px;
+    }
+}
+
+@media (max-width: 859px) and (min-width: 655px) {
+    #anuncio-flex > img {
+        width: 600px;
+    }
+}
+
+@media (max-width: 654px) and (min-width: 501px) {
+    #anuncio-flex > img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+    #anuncio-flex > img {
+        width: 80%;
+    }
+}
