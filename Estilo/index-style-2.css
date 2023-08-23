@@ -23,6 +23,7 @@
     --tema-3: #111;
     --tema-4: #4318DE;
     --tema-5: #220394;
+    --tema-6: #000;
     --tema-quebra-pagina: #c8c8c8;
     --botao-cor1: #7d1ad4;
     --botao-cor2: #6e17b9;
@@ -42,6 +43,7 @@
     --tema-3: #5327F2;
     --tema-4: #4318DE;
     --tema-5: #220394;
+    --tema-6: #220394;
     --tema-quebra-pagina: #5327F2;
     --link-color: #fff;
 }
@@ -67,6 +69,7 @@ a {
 
 li {
     list-style: none;
+    font-size: 1.1em;
 }
 
 #header {
@@ -320,7 +323,7 @@ main {
 }
 
 .titulo-1920 > h1 {
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin: 0;
@@ -355,39 +358,136 @@ main {
     display: none;
 }
 
-.anuncio {
-    animation-name: anuncio;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    width: 50%;
-}
-
-.borda-anuncio {
-    text-align: center;
-    font-family: var(--font-evento);
-    font-size: 12px;
-}
-
 .quebra-de-pagina {
     display: none;
 }
 
-.section-anuncio {
+.aside-anuncio {
     display: grid;
     justify-items: center;
-    grid-template-areas:
-    "topico topico"
-    "anuncio anuncio";
 }
 
-.section-anuncio > h1 {
-    display: grid;
-    grid-area: topico;
+.anuncio {
+    animation-name: anuncio;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    width: 50%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.lista-materia > li {
+    margin-top: 10px;
+}
+
+#topico-imperial > p {
+    padding-top: 10px;
+    padding-bottom: 5px; 
+}
+
+#topico-furia > p {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+@keyframes anuncio {
+    0% {background-image: url("../Imagens/anuncios-grandes/itau.jpg");}
+
+    20% {background-image: url("../Imagens/anuncios/liquid.png");}
+
+    40% {background-image: url("../Imagens/anuncios/mcdonalds.jpg");}
+
+    60% {background-image: url("../Imagens/anuncios/betano.png");}
+
+    100% {background-image: url("../Imagens/anuncios/brazino777.png");}
+}
+
+footer {
+    background: var(--tema-3);
+    margin-top: 3%;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 40px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais a {
+    margin: .7%;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.redes-sociais a i {
+    font-size: 2em;
+    color: var(--tema-3);
+}
+
+.redes-sociais a:hover {
+    background-color: var(--tema-3);
+    transition: .5s;
+}
+
+.redes-sociais a:hover i {
+    color: #fff;
+    transition: .5s;
+}
+
+.navFooter {
+    margin: 30px 0;
+}
+
+.navFooter ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navFooter ul li a {
+    color: #fff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.navFooter li {
+    list-style: none;
+}
+
+.navFooter ul li a:hover {
+    opacity: 1;
+}
+
+.copyright {
+    background-color: var(--tema-6);
+    padding: 30px;
+    text-align: center;
+}
+
+.copyright p {
+    color: #979797;
+}
+
+.designed {
+    color: #fff;
+    font-weight: 400;
 }
 
 @media (min-width: 1301px) and (max-width:1511px) {
     .titulo-1920 > h1 {
         font-size: 1.3em;
+    }
+
+    .lista-materia > li {
+        font-size: 0.9em;
     }
 }
 
@@ -397,7 +497,11 @@ main {
     }
 
     .lista-materia > li {
-        font-size: 1.3em;
+        font-size: 1.1em;
+    }
+
+    .anuncio {
+        width: 90%;
     }
 }
 
@@ -408,6 +512,15 @@ main {
 
     .titulo-1920 > h1 {
         font-size: 1.17em;
+    }
+
+    .anuncio {
+        width: 90%;
+    }
+
+    .lista-materia > li {
+        font-size: 0.9em;
+        margin-top: 5px;
     }
 }
 
@@ -568,6 +681,15 @@ main {
     .noticia-grid {
         box-shadow: 1px 1px 10px #00000021;
     }
+
+    .aside-anuncio {
+        padding-top: 15px;
+        border-bottom: 1px solid #c8c8c8;
+    }
+
+    .anuncio {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -608,5 +730,17 @@ main {
 
     #topico {
         left: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .navFooter ul {
+        flex-direction: column;
+    }
+
+    .navFooter ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
     }
 }
