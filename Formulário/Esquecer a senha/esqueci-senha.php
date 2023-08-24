@@ -11,7 +11,7 @@ if(isset($_POST['submit'])) {
 
     if($resultBusca && mysqli_num_rows($resultBusca) > 0) {
         $_SESSION['cpfEsqueci'] = $cpfEsqueci;
-        header("Location: http://localhost/Desenvolvimento-Web-2-git/Formul%c3%a1rio/Esquecer%20a%20senha/redefinir-senha.php");
+        header("Location: http://localhost/Desenvolvimento-Web-2/Formul%c3%a1rio/Esquecer%20a%20senha/redefinir-senha.php");
         exit();
     }
 

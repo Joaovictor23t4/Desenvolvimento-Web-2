@@ -294,7 +294,7 @@ main {
     grid-area: imagem;
 }
 
-.imagem-grid-1920 > img {
+.imagem-grid-1920 > a > img {
     width: 100%;
     border-radius: 5%;
 }
@@ -317,6 +317,10 @@ main {
     font-size: 1.1em;
 }
 
+.topico-1920 > p > a {
+    color: var(--tema-escuro);
+}
+
 .titulo-1920 {
     grid-area: titulo;
     font-family: var(--font-evento-500);
@@ -330,10 +334,18 @@ main {
     color: var(--tema-4);
 }
 
+.links-noticias {
+    color: var(--tema-4);
+}
+
 .lista-materia {
     color: var(--header-color);
     margin-top: 10px;
     font-family: var(--font-evento);
+}
+
+.links-subtitulos-noticias {
+    color: var(--header-color);
 }
 
 .publicacao-1920 {
@@ -598,11 +610,12 @@ footer {
         text-shadow: none;
     }
 
-    .topico-section > p {
+    .topico-section > p > a {
         font-family: var(--font-evento-500);
         font-size: 0.8em;
         color: var(--tema-escuro);
     }
+
 
     .titulo-section {
         display: block;
@@ -610,6 +623,10 @@ footer {
         font-family: var(--font-evento-500);
         color: var(--header-color);
         padding: 0px 30px 30px 30px;
+    }
+
+    .titulo-section > h2 > a {
+        color: var(--header-color);
     }
 
     .h2-section {
@@ -628,6 +645,10 @@ footer {
         margin-top: 15px;
         font-size: 1em;
         font-family: var(--font-evento);
+    }
+
+    .h3-class-section > a {
+        color: var(--header-color);
     }
 
     .h3-class-section::after {

@@ -2,7 +2,7 @@
 
 session_start();
 
-$urlLogin = 'http://localhost/Desenvolvimento-Web-2-git/Formul%c3%a1rio/Login/login.php';
+$urlLogin = 'http://localhost/Desenvolvimento-Web-2/Formul%c3%a1rio/Login/login.php';
 $texto = 'Clique aqui para voltar para a página de Login!';
 
 if(isset($_SESSION['cpfEsqueci'])) {

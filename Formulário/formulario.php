@@ -18,7 +18,7 @@
 
     include_once('conexao.php');
 
-    $urlLogin = 'http://localhost/Desenvolvimento-Web-2-git/Formul%c3%a1rio/Login/login.php';
+    $urlLogin = 'http://localhost/Desenvolvimento-Web-2/Formul%c3%a1rio/Login/login.php';
     $texto = 'Clique aqui para ir para a página de Login!';
 
     $nome = $_POST['nome'];
@@ -33,11 +33,11 @@
 
     $confirmResult = mysqli_query($conexao, "SELECT cpf FROM informacoes WHERE cpf = '$cpf'");
 
-    if ($confirmResult & mysqli_num_rows($confirmResult) === 0) {
+    if ($confirmResult && mysqli_num_rows($confirmResult) === 0) {
         echo "CPF não cadastrado";
     }
 
-    else if ($confirmResult & mysqli_num_rows($confirmResult) > 0) {
+    else if ($confirmResult && mysqli_num_rows($confirmResult) > 0) {
         echo "CPF cadastrado!";
         echo '<a href="' . $urlLogin . '">' . $texto . '</a>';
     }
