@@ -332,6 +332,7 @@ main {
     margin-block-end: 0.67em;
     margin: 0;
     color: var(--tema-4);
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 
 .links-noticias {
@@ -627,6 +628,7 @@ footer {
 
     .titulo-section > h2 > a {
         color: var(--header-color);
+        text-shadow: 0 1px 2px rgba(0,0,0,.1);
     }
 
     .h2-section {
